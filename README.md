@@ -6,10 +6,9 @@ where you can Add, Delete, Update or Search your employee's details.
 To Run on your system
 
 1. Clone the project
-2. create a folder public and inside of that create another folder assets and put the img folder,script.js and style.css file in it.
-3. Open the cmd and cd to the cloned folder's path and run npm install.
-4. type nodemon.
-5. Now open your browser and type localhost:3000
+2. Open the cmd and cd to the cloned folder's path and run npm install.
+3. type nodemon.
+4. Now open your browser and type localhost:3000
 
 And here it is
 
