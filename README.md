@@ -1,7 +1,7 @@
 # ems
 
 # It is a simple Employee Management System
-where you can Add, Delete, Update or Search your employee's details.
+where you can Add, Delete, Update or Search your employee's details. Since not many routes were there. Hence I have put it in controller.js with the database parameters.
 
 To Run on your system
 
