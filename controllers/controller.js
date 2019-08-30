@@ -1,4 +1,4 @@
-// Since not a routes are there. Hence, I will be putting all the routes and the database parameters in this controller.js file
+// Since not many routes are there. Hence, I will be putting all the routes and the database parameters in this controller.js file
 
 // requiring objectId from mongodb which is used later for updating the database
 
