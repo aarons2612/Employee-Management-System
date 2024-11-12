@@ -48,3 +48,136 @@ form{
         width: 90%;
     }
 }
+
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .homepage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* Full viewport coverage */
+    background-color: white;
+  }
+  
+  /* Main Content */
+  .main-content {
+    display: flex;
+    flex-direction: column; /* Better layout on mobile */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%; /* Prevents content from exceeding viewport */
+  }
+  
+  .text-content {
+    max-width: 100%; /* Improves mobile responsiveness */
+    text-align: center; /* Center-align text for smaller screens */
+  }
+  
+  .text-content h1 {
+    font-size: 36px;
+    line-height: 1.2; /* Enhanced readability */
+  }
+  
+  .amplified {
+    color: #007bff;
+  }
+  
+  .text-content p {
+    font-size: 18px;
+    margin: 20px 0;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px; /* Adjusted for spacing on mobile */
+  }
+  
+  .get-started-btn {
+    font-size: 1em;
+    padding: 10px 15px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  /* Image Content */
+  .image-content {
+    margin-top: 20px; /* Adjusted spacing for mobile */
+    position: relative; /* For positioning elements inside */
+  }
+  
+  .image-content img {
+    width: 100%;
+    max-width: 100%; /* Responsive sizing */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .faster-hiring {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  /* Responsive Styles */
+  @media (min-width: 768px) {
+    .main-content {
+      flex-direction: row; /* Row layout on larger screens */
+      align-items: center;
+      text-align: left;
+      padding: 40px;
+    }
+  
+    .text-content {
+      max-width: 40%;
+      text-align: left;
+    }
+  
+    .text-content h1 {
+      font-size: 48px; /* Larger font size on larger screens */
+    }
+  
+    .text-content p {
+      font-size: 20px;
+    }
+  
+    .cta-buttons {
+      margin-top: 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .text-content h1 {
+      font-size: 28px;
+    }
+  
+    .text-content p {
+      font-size: 16px;
+    }
+  
+    .get-started-btn {
+      font-size: 0.9em;
+      padding: 8px 12px;
+    }
+  
+    .faster-hiring {
+      font-size: 10px;
+    }
+  }
+  

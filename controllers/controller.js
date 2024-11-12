@@ -19,7 +19,7 @@ var mongoose = require('mongoose');
 
 
 //connecting with the cloud mongodb.Atlas database  
-mongoose.connect('mongodb+srv://shoaib:shoaib@cluster0-hgnzq.mongodb.net/test?retryWrites=true&w=majority',{useNewUrlParser: true})
+mongoose.connect('mongodb+srv://aaronsimon:Dontworry7@cluster0.nuljur3.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0',{useNewUrlParser: true, useUnifiedTopology: true})
 
 
 
