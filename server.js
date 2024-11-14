@@ -10,10 +10,21 @@ app.use(express.static('./public'));
 
 // Render home.ejs when '/home' is accessed
 app.get('/home', (req, res) => {
-  res.render('home'); // Ensure home.ejs is in the views folder
+  controller.getEmployees((err, data) => {
+    if (err) throw err;
+    res.render('home', { employee: data });
+  });
 });
 
-controller(app);
+// Render index.ejs when '/' is accessed
+app.get('/', (req, res) => {
+  res.render('index');
+});
+
+app.post('/', urlencodedParser, controller.addEmployee);
+app.get('/:_id', controller.getEmployeeById);
+app.delete('/:_id', controller.deleteEmployee);
+app.post('/:_id', urlencodedParser, controller.updateEmployee);
 
 app.listen(3000, () => {
   console.log('Server is running on http://localhost:3000');

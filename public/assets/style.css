@@ -75,6 +75,7 @@ body {
     padding: 20px;
     max-width: 1200px;
     width: 100%; /* Prevents content from exceeding viewport */
+    gap: 50px;
   }
   
   .text-content {

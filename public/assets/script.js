@@ -5,7 +5,7 @@ $('.delete').on('click',()=>{
           $.ajax({
             type:'DELETE',
             success: function(data){
-                location.assign('/')
+                location.assign('/home')
             }
         });
         return false;
